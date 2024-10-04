@@ -1,0 +1,20 @@
+{
+	"name": "SourceDataset_87x",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "sales.txt",
+				"folderPath": "sample/data",
+				"container": "salesdata"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

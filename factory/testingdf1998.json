@@ -1,0 +1,9 @@
+{
+	"name": "testingdf1998",
+	"location": "centralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "9c34a673-a6f6-4951-884c-236eeecfb378",
+		"tenantId": "fbfc1427-bd99-4679-9bc7-f032a6ce0c58"
+	}
+}
