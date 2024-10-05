@@ -5,6 +5,11 @@
 			"referenceName": "AzureSQLSales",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"dsTableName": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "AzureSqlTable",
 		"schema": [
@@ -19,7 +24,10 @@
 		],
 		"typeProperties": {
 			"schema": "dbo",
-			"table": "company"
+			"table": {
+				"value": "@dataset().dsTableName",
+				"type": "Expression"
+			}
 		}
 	},
 	"type": "Microsoft.DataFactory/factories/datasets"
