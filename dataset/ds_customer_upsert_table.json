@@ -1,0 +1,16 @@
+{
+	"name": "ds_customer_upsert_table",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase_Sales",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "customer_upsert"
+		}
+	}
+}
