@@ -1,0 +1,24 @@
+{
+	"name": "AzureSql_multiple_xl_ds",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase_Sales",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"dsTableName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": {
+				"value": "@dataset().dsTableName",
+				"type": "Expression"
+			}
+		}
+	}
+}
