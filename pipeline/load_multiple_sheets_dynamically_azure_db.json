@@ -22,9 +22,10 @@
 						"partitionOption": "None"
 					},
 					"dataset": {
-						"referenceName": "ds_destinationSQLSales",
+						"referenceName": "ds_Azure_dynamic_Sales",
 						"type": "DatasetReference"
-					}
+					},
+					"firstRowOnly": false
 				}
 			},
 			{
