@@ -1,0 +1,55 @@
+{
+	"name": "Azure_zones_Salesdb",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_Zones_SalesDB",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Zone_Business_Key",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Name",
+				"type": "varchar"
+			},
+			{
+				"name": "ENTRY_DATE",
+				"type": "varchar"
+			},
+			{
+				"name": "ADDRESS",
+				"type": "varchar"
+			},
+			{
+				"name": "PHONE",
+				"type": "varchar"
+			},
+			{
+				"name": "FAX",
+				"type": "varchar"
+			},
+			{
+				"name": "EMAIL",
+				"type": "varchar"
+			},
+			{
+				"name": "ZONE_DETAIL",
+				"type": "varchar"
+			},
+			{
+				"name": "ZONE_SHORT",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "zones"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
