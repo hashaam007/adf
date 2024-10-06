@@ -2,7 +2,7 @@
 	"name": "Trigger_yl8",
 	"properties": {
 		"annotations": [],
-		"runtimeState": "Stopped",
+		"runtimeState": "Started",
 		"pipeline": {
 			"pipelineReference": {
 				"referenceName": "CopyFiles_incremental_blob_to_blob",
